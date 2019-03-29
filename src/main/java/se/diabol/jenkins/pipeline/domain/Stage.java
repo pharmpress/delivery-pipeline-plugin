@@ -256,7 +256,7 @@ public class Stage extends AbstractItem {
 
         List<List<Stage>> allPaths = findAllRunnablePaths(findStageForJob(firstProject.getRelativeNameFrom(
                 Jenkins.getInstance()), stages), graph);
-        allPaths.sort((stages1, stages2) -> stages2.size() - stages1.size());
+        //allPaths.sort((stages1, stages2) -> stages2.size() - stages1.size());
         
         //for keeping track of which row has an available column
         final Map<Integer,Integer> columnRowMap = Maps.newHashMap();
